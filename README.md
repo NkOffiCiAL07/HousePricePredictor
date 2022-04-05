@@ -1,4 +1,4 @@
 # HousePricePredictor
 
-Find The link of the House Price Predictor :-
+Find the link of the House Price Predictor :-
 https://housepricepredictor0.herokuapp.com/
