@@ -3,39 +3,45 @@
 body {    
     margin: 0px ;
     padding: 0px ;
+    border-radius: 20px;
 }
 .button {
-	
   background-color: #4CAF50; /* Green */
-  border: none;
+  border: 10px;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  border-radius: 20px;
+  font-size: 50px;
 }
 .check{
-	margin-top:0px;
+	margin-top:10px;
+  border-radius: 20px;
 }
 
 .h-center {
 	margin-top:70px;
     text-align: center;
+    border-radius: 20px;
 }
 .incr_hei_wide{
-	width:100% ;
+	width:98% ;
 	height:150px;
+  border-radius: 20px;
+  background-color: lightgoldenrodyellow;
 }
 .incri_hei_wide{
-	width:50% ;
+	width:70% ;
 	height:70px;
+  border-radius: 20px;
+  
 }
 
 .card {
-	
-  background-image: url("https://digitalsynopsis.com/wp-content/uploads/2018/03/beautiful-color-gradient-hues-backgrounds-ce9ffc-7367f0.png");
+	background-color: lightsteelblue;
   background-size: cover;
   width: 100vw;
   height: 120vh;
+  border-radius: 20px;
 }
