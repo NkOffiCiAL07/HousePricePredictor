@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> House Prices Predictor </title>
+    <link rel="stylesheet" type="text/css" href="/static/index.css" />
+</head>
+	<body class = "card">
+		<div>
+			<div class = "h-center">
+				<h1> Wanna predict the house price ? I have an advanced ML model! </h1>
+			</div>
+			<form action="/" method="POST">
+				<div class = "h-center">
+					<TABLE class = "incr_hei_wide" BORDER=1 >
+					<TR >
+						<TH>
+							<p>
+									Enter the LandSlope  (Slope of property of house)   
+							</p>
+							<input type="text" name="landSlope" placeholder="input is as Gtl,Med,Sev">
+						</TH>
+						<TH>
+							<p>
+								Enter the OverallQual (Overall material and finish quality)  
+							</p>
+							<input type="number" name="overallQual" placeholder="input material quality">
+						</TH>
+						<TH>
+							<p>
+								Enter the GarageCars (Size of garage in car capacity) 
+							</p>
+							<input type="number" name="garageCars" placeholder="input of garage car capacity">
+						</TH>
+					</TR>
+					</TABLE>
+				</div>
+				
+				<TABLE class = "incr_hei_wide" BORDER=1>
+				<TR>
+					<TH>
+						<p>
+							Enter the OverallCond (Overall condition rating) 
+						</p>
+						<input type="number" name="overallCond" placeholder="intput condition rating">
+					</TH>
+					<TH>
+						<p>
+							Enter the Fireplaces (Number of fireplaces)    
+						</p>
+						<input type="number" name="fireplaces" placeholder="input of Number of fireplaces">
+					</TH>
+				</TR>
+				</TABLE>
+				<div class="h-center">
+					<input type="submit" class="button" >
+					
+				</div>
+			</form>
+			<div class="h-center">
+				<div style="background: ghostwhite; 
+							border-color: orange;
+							border-radius: 20px;
+							font-size: 20px; 
+							padding: 10px; 
+							padding-left: 50px;
+							border: 1px solid lightgray; 
+							margin-left:500px;
+							margin-right:500px;
+							">
+				{% if my_pred %}
+				<p> Your predicted house price is: </p> {{ my_pred }}
+				{% endif %}	
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
