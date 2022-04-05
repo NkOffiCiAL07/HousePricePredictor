@@ -15,5 +15,5 @@ def hello():
         price_pred =  price.predict_price( LandSlope, OverallQual, GarageCars, OverallCond, Fireplaces )
     return render_template("index.html", my_pred = price_pred)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(port = 5000, debug=True)
