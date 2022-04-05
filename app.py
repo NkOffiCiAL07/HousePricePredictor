@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods = ['GET','POST'])
 def hello():
+    price_pred = 0
     if request.method == "POST":
         LandSlope = request.form['landSlope']
         OverallQual = request.form['overallQual']
